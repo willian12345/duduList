@@ -1,0 +1,42 @@
+@import '@/scss/_var.scss';
+.wrap{
+	font-family: PingFang-SC-Regular,PingFang-SC;
+}
+.flex-row{
+	display: flex;
+	align-items: center;
+	text-align: left;
+	.col{
+		flex: 1
+	}
+}
+.invisible-btn{
+	border: none;
+	text-align: inherit;
+	padding: 0;
+	margin: 0;
+	line-height: inherit;
+	background: transparent;
+	color: inherit;
+	border-radius: 0;
+	font-size: inherit;
+	&::after {
+		border: none;
+	}
+}
+.show{
+	display: block!important;
+}
+.hide{
+	display: none;
+}
+
+.arrow{
+	width: 36upx;
+	height: 38upx;
+	background-image: url(~@/static/image/arrow-down.png);
+	background-size: 100%;
+}
+.arrow-up{
+	background-image: url(~@/static/image/arrow-up.png);
+}
