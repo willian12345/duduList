@@ -82,7 +82,7 @@
 					}
 				}
 			},
-			// 当前页的下而的下页隐藏
+			// 当前页的下页的下页隐藏
 			hideNext(page){
 				if(page + 1 <= this.pageOffset){
 					let last = ((this.pageOffset - page) + page) * this.pageSize
